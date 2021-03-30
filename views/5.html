@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="10">
+    </head>
+   <body>
+    <table>
+        <tr>
+            <td>Symbol</td>
+            <td>Spread</td>
+            <td>Absolute Delta</td>
+        </tr>
+       {{range $key, $value := . }}
+        <tr>
+            <td>
+                {{ $key }}
+            </td>
+            <td>
+                {{ $value.Spread }}
+            </td>
+            <td>
+                {{ $value.Delta }}
+            </td>
+        </tr>
+       {{end}}
+    </table>
+   </body> 
+</html>
